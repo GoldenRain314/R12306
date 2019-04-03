@@ -18,7 +18,7 @@ public class logAreaEvent<T> implements MouseListener {
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		if (e.getButton() == e.BUTTON3) {
 			Page.logArea.setText("");
@@ -26,25 +26,25 @@ public class logAreaEvent<T> implements MouseListener {
 		}
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

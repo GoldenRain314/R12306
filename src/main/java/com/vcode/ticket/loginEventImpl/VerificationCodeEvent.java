@@ -3,12 +3,12 @@ package com.vcode.ticket.loginEventImpl;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import org.apache.log4j.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,14 +28,14 @@ public class VerificationCodeEvent<T> implements MouseListener {
 	@Autowired
 	private LoginPage<T> Page;
 	
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		final JComponent p3 = (JComponent) Page.frame.getLayeredPane();
 		if (e.getButton()==e.BUTTON1) {
 			ImageIcon icon = new ImageIcon(LoginPage.class.getResource("../image/12306.jpg"));
 			final JLabel jb3 = new JLabel(icon);
 			jb3.addMouseListener(new MouseAdapter() {
-				@Override
+				
 				public void mouseClicked(MouseEvent e) {
 					p3.remove(jb3);
 					p3.repaint();
@@ -49,25 +49,25 @@ public class VerificationCodeEvent<T> implements MouseListener {
         }
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

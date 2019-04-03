@@ -20,7 +20,7 @@ public class ExchangeLabelEvent<T> implements MouseListener {
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		String one = Page.setOutFidld.getText();
 		String two = Page.destinationField.getText();
@@ -28,25 +28,25 @@ public class ExchangeLabelEvent<T> implements MouseListener {
 		Page.destinationField.setText(one);
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

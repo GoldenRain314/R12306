@@ -22,7 +22,7 @@ public class StartTimeComboBoxEvent<T> implements ActionListener {
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
 		DefaultTableModel model = (DefaultTableModel) Page.trainTable.getModel();
 		model.setRowCount(0);

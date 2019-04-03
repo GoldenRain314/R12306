@@ -25,7 +25,7 @@ public class LoginBtEvent<T> implements ActionListener {
 	@Autowired
 	private LoginPage<T> Page;
 	
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
 		//loginMethods.CheckCode();
 		Page.frame.setVisible(false);

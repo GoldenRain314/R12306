@@ -22,7 +22,7 @@ public class AllTrainTypeEvent<T> implements MouseListener {
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		//TODO 未完成
 		Component[] comps = Page.seatTypePanel.getComponents();
@@ -54,25 +54,25 @@ public class AllTrainTypeEvent<T> implements MouseListener {
 		}
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

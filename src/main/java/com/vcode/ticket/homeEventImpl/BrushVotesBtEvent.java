@@ -20,7 +20,7 @@ public class BrushVotesBtEvent<T> implements MouseListener{
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		//未完成
 		if (Page.ticket_type == 1) {
@@ -38,25 +38,25 @@ public class BrushVotesBtEvent<T> implements MouseListener{
 		}
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 		

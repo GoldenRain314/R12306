@@ -22,7 +22,7 @@ public class SeatBtEvent<T> implements MouseListener {
 	@Autowired
 	private HomePage<T> Page;
 	
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		DefaultListModel<Object> pupModel = new DefaultListModel<Object>();
 		pupModel.addElement("商务座");
@@ -39,25 +39,25 @@ public class SeatBtEvent<T> implements MouseListener {
 		PopList.initPopup(e.getComponent(), Page.seatTypeList, pupModel);
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

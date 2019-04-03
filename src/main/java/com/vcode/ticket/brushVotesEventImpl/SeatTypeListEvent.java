@@ -20,7 +20,7 @@ public class SeatTypeListEvent<T> implements MouseListener {
 	@Autowired
 	private HomePage<T> Page;
 
-	@Override
+	
 	public void mouseClicked(MouseEvent e) {
 		if (e.getClickCount() >= 2) {
 			if (Page.seatTypeList.getSelectedIndex() > -1) {
@@ -35,25 +35,25 @@ public class SeatTypeListEvent<T> implements MouseListener {
 		}
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 

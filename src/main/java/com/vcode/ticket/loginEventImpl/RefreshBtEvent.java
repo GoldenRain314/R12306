@@ -24,7 +24,7 @@ public class RefreshBtEvent<T> implements ActionListener {
 	@Autowired
 	private LoginPage<T> Page;
 
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
 		Page.verificationCode.setIcon(new ImageIcon(""));
 		JComponent p3 = (JComponent)Page.frame.getLayeredPane();
