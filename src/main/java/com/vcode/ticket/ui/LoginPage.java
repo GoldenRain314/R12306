@@ -41,7 +41,7 @@ public class LoginPage<T> {
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
-		frame = new JFrame("欢迎使用V代码抢票工具——Login");
+		frame = new JFrame("GoldenRain自制抢票工具");
 		frame.setBounds(100, 100, 440, 465);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,7 +73,7 @@ public class LoginPage<T> {
 		frame.getContentPane().add(refreshBt);
 		
 		passwordField = new JPasswordField("");
-		passwordField.setEchoChar('♫');
+		passwordField.setEchoChar('*');
 		passwordField.setToolTipText("");
 		passwordField.setBounds(123, 67, 230, 33);
 		frame.getContentPane().add(passwordField);

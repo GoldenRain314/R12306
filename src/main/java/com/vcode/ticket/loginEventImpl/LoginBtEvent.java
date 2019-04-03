@@ -7,8 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.vcode.ticket.ApplicationContextFactory;
-import com.vcode.ticket.ui.HomePage;
+import com.vcode.ticket.methods.LoginMethods;
 import com.vcode.ticket.ui.LoginPage;
 
 /**
@@ -27,10 +26,10 @@ public class LoginBtEvent<T> implements ActionListener {
 	
 	
 	public void actionPerformed(ActionEvent e) {
-		//loginMethods.CheckCode();
-		Page.frame.setVisible(false);
-		HomePage<T> homePage = (HomePage<T>) ApplicationContextFactory.getBean(HomePage.class);
-		homePage.show(homePage);
+		//需要判断表单
+		Log.info("正在验证表单。。。。");
+		LoginMethods.CheckCode(Page);
+
 	}
 
 }

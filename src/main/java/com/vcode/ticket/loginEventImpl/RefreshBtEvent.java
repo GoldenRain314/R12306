@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.vcode.ticket.methods.LoginMethods;
 import com.vcode.ticket.ui.LoginPage;
 
 /**
@@ -26,15 +27,9 @@ public class RefreshBtEvent<T> implements ActionListener {
 
 	
 	public void actionPerformed(ActionEvent e) {
-		Page.verificationCode.setIcon(new ImageIcon(""));
-		JComponent p3 = (JComponent)Page.frame.getLayeredPane();
-		Component[] cons = p3.getComponents();
-		for (Component con : cons) {
-			if (con instanceof JLabel) {
-				p3.remove(con);
-			}
-		}
 		Page.frame.repaint(); 
+		Page.verificationCode.setIcon(new ImageIcon(LoginMethods.getLoginCode()));
+		
 	}
 
 }
